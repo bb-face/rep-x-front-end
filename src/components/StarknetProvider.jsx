@@ -23,10 +23,12 @@ export function StarknetProvider({ children }) {
     order: "random"
   });
 
+  const provider = jsonRpcProvider({ rpc: (chain) => ({ nodeUrl: import.meta.env.NEXT_PUBLIC_RPC_URL }) })
+
   return (
     <StarknetConfig
       chains={[sepolia]}
-      provider={jsonRpcProvider({ rpc: (chain) => ({ nodeUrl: import.meta.env.NEXT_PUBLIC_RPC_URL }) })}
+      provider={provider}
       connectors={connectors}
       explorer={voyager}
     >
