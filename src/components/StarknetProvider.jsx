@@ -23,7 +23,7 @@ export function StarknetProvider({ children }) {
     order: "random"
   });
 
-  const provider = jsonRpcProvider({ rpc: (chain) => ({ nodeUrl: import.meta.env.NEXT_PUBLIC_RPC_URL }) })
+  const provider = jsonRpcProvider({ rpc: (chain) => ({ nodeUrl: import.meta.env.VITE_RPC_URL }) })
 
   return (
     <StarknetConfig
