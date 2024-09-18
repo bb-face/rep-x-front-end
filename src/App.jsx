@@ -1,12 +1,14 @@
-import { useState } from 'react'
 import './App.css'
+
+import { StarknetProvider } from './components/StarknetProvider'
+import UserWallet from './components/UserWallet'
 
 function App() {
   return (
-    <>
-      <h1 className='text-3xl font-bold underline'>Hello World</h1>
-    </>
+    <StarknetProvider>
+      <UserWallet />
+    </StarknetProvider>
   )
 }
-
+ 
 export default App
