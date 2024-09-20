@@ -64,7 +64,7 @@ function ReclaimButton() {
       <div className="mt-4">
         {data ? (
           <div className="flex flex-col gap-y-4">
-            <DisplayJson data={exampleData} />
+            <DisplayJson data={data} />
             <button
               disabled={!userAddress}
               className="mt-3 border border-black text-black font-regular py-2 px-4 bg-yellow-300 hover:bg-yellow-500 disabled:bg-gray-300 disabled:cursor-not-allowed"

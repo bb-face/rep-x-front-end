@@ -1,14 +1,14 @@
 import ReclaimButton from './components/ReclaimButton';
 import { StarknetProvider } from './components/StarknetProvider';
-import UserWallet from './components/UserWallet';
 import InteractWithSmartContract from './components/InteractWithSmartContract';
+import Navbar from './components/UI/Navbar';
+
 
 function App() {
   return (
     <StarknetProvider>
-      <div className="min-h-screen bg-gray-100 p-4 flex flex-col gap-y-4">
-        <h1 className="text-3xl font-bold text-center mb-6">RepX</h1>
-        <UserWallet />
+      <div className="min-h-screen bg-black p-4 flex flex-col gap-y-4">
+        <Navbar />
         <InteractWithSmartContract />
         <ReclaimButton />
       </div>
