@@ -4,8 +4,8 @@ import { Reclaim } from '@reclaimprotocol/js-sdk';
 import { useAccount } from '@starknet-react/core';
 
 import DisplayJson from './UI/DisplayJson';
-
 import { githubProvider } from '../utils/providers';
+import githubLogo from '../assets/logo-github.png';
 
 function ReclaimButton() {
   const { address: userAddress } = useAccount();
@@ -45,8 +45,8 @@ function ReclaimButton() {
     <div className="border border-black p-4 bg-white">
       <div className="flex justify-between items-center">
         <div>
-          <p>domain: github;</p>
-          <p>data: username;</p>
+          <p className='flex justify-center items-center'>Domain: <img src={githubLogo} width={150} className=''/></p>
+          <p>Data: username;</p>
         </div>
         <div>
           {!url ? (
