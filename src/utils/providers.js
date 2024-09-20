@@ -1,0 +1,1 @@
+export const githubProvider = '6d3f6753-7ee6-49ee-a545-62f1b1822ae5';
