@@ -43,7 +43,7 @@ function ReclaimButton() {
   };
 
   return (
-    <div className="border border-black p-4 bg-white">
+    <div className="border border-black p-4 bg-white mt-4">
       <div className="flex justify-between items-center">
         <div>
           <p className='flex justify-center items-center'>Domain: <img src={githubLogo} width={150} className=''/></p>

@@ -12,7 +12,7 @@ function UserWallet() {
         <h2 className="text-xl font-bold mb-2">Wallet Connection</h2>
         <div className="flex flex-col items-center space-y-4">
           {!address ? (
-            <div className="flex flex-wrap justify-center gap-2">
+            <div className="flex flex-col justify-center gap-2">
               {connectors.map((connector) => (
                 <button
                   key={connector.id}

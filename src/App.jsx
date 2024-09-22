@@ -7,11 +7,11 @@ import { cn } from './utils/background';
 
 function App() {
   return (
-    <div className="h-96 relative w-full overflow-hidden bg-slate-500 flex flex-col items-center justify-center rounded-lg font-noto-sans">
+    <div className="h-full text-black min-h-screen relative w-full overflow-hidden bg-slate-500 flex flex-col items-center justify-center rounded-lg font-noto-sans p-8">
       <Boxes />
       <StarknetProvider>
-        <div className="absolute inset-0 w-full h-full z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
-        <div className={cn("md:text-4xl text-xl text-white relative z-20")}>
+        <div className="max-w-screen-lg absolute inset-0 w-full h-full z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+        <div className={cn('text-xl relative z-20 gap-y-4')}>
           <Navbar />
           <InteractWithSmartContract />
           <ReclaimButton />

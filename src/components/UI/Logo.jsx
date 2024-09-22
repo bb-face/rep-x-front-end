@@ -8,7 +8,7 @@ import logoNoBackground from '../../assets/logo-no-background.svg';
 function Logo() {
   return (
     <a href="/">
-      <img src={logoWhite} width={150} className="margin-auto" />
+      <img src={logoNoBackground} width={150} className="margin-auto" />
     </a>
   );
 }

@@ -83,7 +83,7 @@ function InteractWithSmartContract() {
     return 'Send';
   };
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-4 border-black border">
+    <form onSubmit={handleSubmit} className="bg-white p-4 border-black border mt-4">
       <h3 className="text-lg font-bold mb-2">Write to Contract</h3>
       <label htmlFor="amount" className="block text-sm font-medium text-gray-700">
         Amount:
